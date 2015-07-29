@@ -2,15 +2,15 @@
 
 A small sip cli app based on simpleua and clidemo example. So there's 70% identical with the source provided by pjsip.
 
-# To compile:
+# To compile
 
 1. Download latest pjsua (2.4 for latest test) and compile
 
 2. Install qmake (qt4-qmake or qt5-qmake is just fine, since we'll use it along with Qt Creator), and Qt Creator IDE.
 
-Assume you're on Ubuntu/Debian-based:
+	Assume you're on Ubuntu/Debian-based:
 
-> sudo apt-get install qt4-qmake qtcreator
+	> sudo apt-get install qt4-qmake qtcreator
 
 3. Open Qt Creator and open project file: tinysip.pro
 
@@ -21,15 +21,15 @@ Assume you're on Ubuntu/Debian-based:
 # Note on issues
 
 1. If there's ssl error:
-- Configure the pjproject with --disable-ssl option
-> cd pjproject-x.x/
-> chmod +x aconfigure configure
-> ./configure --disable-ssl
+	- Configure the pjproject with --disable-ssl option
+		> cd pjproject-x.x/
+		> chmod +x aconfigure configure
+		> ./configure --disable-ssl
 
 - Compile pjsip again
-> make dep && make
+	> make dep && make
 
 2. If there's uuid error:
-- Install uuid package
-> sudo apt-get install uuid uuid-dev
+	- Install uuid package
+		> sudo apt-get install uuid uuid-dev
 
