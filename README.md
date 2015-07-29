@@ -22,14 +22,17 @@ A small sip cli app based on simpleua and clidemo example. So there's 70% identi
 
 1. If there's ssl error:
 	- Configure the pjproject with --disable-ssl option
+
 		> cd pjproject-x.x/
 		> chmod +x aconfigure configure
 		> ./configure --disable-ssl
 
-- Compile pjsip again
-	> make dep && make
+	- Compile pjsip again
+	
+		> make dep && make
 
 2. If there's uuid error:
 	- Install uuid package
+
 		> sudo apt-get install uuid uuid-dev
 
