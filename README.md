@@ -24,11 +24,13 @@ A small sip cli app based on simpleua and clidemo example. So there's 70% identi
 	- Configure the pjproject with --disable-ssl option
 
 		> cd pjproject-x.x/
+
 		> chmod +x aconfigure configure
+		
 		> ./configure --disable-ssl
 
 	- Compile pjsip again
-	
+
 		> make dep && make
 
 2. If there's uuid error:
